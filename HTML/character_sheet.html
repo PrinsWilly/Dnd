@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-NL">
+<html>
+	<head>
+		<title>DND Character Sheet</title>
+		<meta name="description" content="This is the description">
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body onload="start()">
+		<script type="text/javascript" src="java-script.js"></script>
+		<header class="main-header">
+			<h1 class="page-title">CHARACTER SHEET</h1>
+			<div class="bg"></div>
+			<nav class="nav main-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="new_character.html">NEW CHARACTER</a></li>
+					<li><a href="character_sheet.html">CHARACTER SHEET</a></li>
+					<li><a href="spells.html">SPELLS</a></li>
+					<li><a href="inventory.html">INVENTORY</a></li>
+				</ul>
+			<button class="login_btn" id='login_btn' onclick="popup()">Login</button>
+			<div class="form-popup" id="myForm">
+				<form action="/action_page.php" class="form-container">
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+
+					<button type="submit" class="btn">Login</button>
+					<button type="button" class="btn cancel" onclick="popdown()">Close</button>
+				</form>
+			</div>
+		</nav>	
+		</header>
+		<section class="content-section container">
+			<h1 class='new-character'>CHARACTER SHEET</h1>
+			<div class="border-box">
+				<div class="box1">
+					<div class="character-information">
+						<strong class="line_names">Character Name:</strong>
+						<input class="character-input" id="character_name" type="text" readonly>
+					</div>
+					<div class="character-information">
+						<strong class="line_names">Level:</strong>
+						<input class="character-input" id="character_level" type="number" value="1">
+					</div>
+					<div class="character-information">
+						<strong class="line_names">Class:</strong>
+						<input class="character-input" id="character_class" type="text" readonly>
+					</div>
+					<div class="character-information">
+						<strong class="line_names">Race:</strong>
+						<input class="character-input" id="character_race" type="text" readonly>
+					</div>
+					<div class="character-information">
+						<strong class="line_names">Player Name:</strong>
+						<input class="character-input" id="player_name" type="text" readonly>
+					</div>
+					<button class="submit_btn" id='login_btn'>Submit</button>
+				</div>
+			</div>
+			</section>
+		</section>
+	</body>
+</html>

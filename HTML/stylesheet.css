@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 4px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.page-title {
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.border-box {
+    text-align: center;
+}
+
+.box1 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+    background: white;
+    box-sizing : border-box;
+}
+
+.box2 {
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+    background: white;
+    box-sizing : border-box;
+}
+
+.main-header {
+    position: relative;
+    z-index: 1;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("Images/banner2.jpg") center center;
+    opacity: .6;
+    width: 100%;
+    height: 100%; 
+}
+
+.submit_btn {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75em;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.login_btn {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    top: 23px;
+    right: 28px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.character-information {
+    padding-bottom: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.character-information-child {
+    border-bottom: none;
+}
+
+.line_names {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: .5em;
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+.character-input {
+    width: 150px;
+    padding-right: .5em;
+}
+
+.new-character {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    margin: 0.2px;
+    font-size: 1em;
+}
+
+p {
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+    border: 2px double black;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+
+.form-container .btn {
+  background-color: #4e8550;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.form-container .cancel {
+   background-color: rgb(153, 37, 37);
+}
+
+
+
+
